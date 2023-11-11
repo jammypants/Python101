@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Relevance</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+       
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 id="Title">Projects at VIT</h1>
+        <ul class="nav nav-tabs" id="projectTabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#sdp">SDP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#edi">EDI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#dt">DT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#cp">CP</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="sdp" class="tab-pane fade show active">
+                <h2>Software Development Project</h2>
+                <li>This course talks about the important processes and steps required for developing/creating a project</li>
+            </div>
+            <div id="edi" class="tab-pane fade">
+                <h2>Engineering Design and Innovation</h2>
+                <li>This is the semester long project based on one technology</li>
+            </div>
+            <div id="dt" class="tab-pane fade">
+                <h2>Design Thinking</h2>
+                <li>This subject is related to publishing a research paper or publishing a patent of the project</li>
+            </div>
+            <div id="cp" class="tab-pane fade">
+                <h2>Course Project</h2>
+                <li>Project based on every subject in the semester</li>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Activate the first tab on page load
+        $('#projectTabs a:first').tab('show');
+
+        // Handle tab switching
+        $('#projectTabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    });
+</script>
+</body>
+</html>
